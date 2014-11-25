@@ -54,14 +54,30 @@
             <ListBox Margin="20,0,0,0" Grid.Row="0">
                 <StackPanel>
                     <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Full Name" VerticalAlignment="Top"/>
-                    <toolkit:PhoneTextBox Hint="" HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="359"/>
+                    <toolkit:PhoneTextBox
+                        Hint=""
+                        HorizontalAlignment="Left"
+                        Height="72"
+                        TextWrapping="Wrap"
+                        Text=""
+                        VerticalAlignment="Top"
+                        Width="359"
+                        x:Name="FullNameTextBox"/>
                 </StackPanel>
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                    <toolkit:PhoneTextBox Grid.Row="1" HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="359"/>
+                    <toolkit:PhoneTextBox
+                        Grid.Row="1"
+                        HorizontalAlignment="Left"
+                        Height="72"
+                        TextWrapping="Wrap"
+                        Text=""
+                        VerticalAlignment="Top"
+                        Width="359"
+                        x:Name="OrganizationTextBox"/>
                     <TextBlock Grid.Row="0" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Organization" VerticalAlignment="Top"/>
                 </Grid>
                 <Grid>
@@ -69,7 +85,15 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                    <toolkit:PhoneTextBox Grid.Row="1" HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="359"/>
+                    <toolkit:PhoneTextBox
+                        Grid.Row="1"
+                        HorizontalAlignment="Left"
+                        Height="72"
+                        TextWrapping="Wrap"
+                        Text=""
+                        VerticalAlignment="Top"
+                        Width="359"
+                        x:Name="PhoneNumberTextBox"/>
                     <TextBlock Grid.Row="0" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Phone Number" VerticalAlignment="Top"/>
                 </Grid>
                 <Grid>
@@ -77,15 +101,22 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                    <toolkit:PhoneTextBox Grid.Row="1" HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="359"/>
-                    <TextBlock Grid.Row="0" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Address" VerticalAlignment="Top"/>
+                    <toolkit:PhoneTextBox 
+                        x:Name="AdressTextBox" Grid.Row="1" HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="359"/>
+                    <TextBlock
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        TextWrapping="Wrap"
+                        Text="Address"
+                        VerticalAlignment="Top"
+                        />
                 </Grid>
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                    <toolkit:PhoneTextBox Grid.Row="1" HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="359"/>
+                    <toolkit:PhoneTextBox x:Name="EmailTextBox" Grid.Row="1" HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="359"/>
                     <TextBlock Grid.Row="0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top"/>
                 </Grid>
             </ListBox>
