@@ -53,14 +53,14 @@
             <ListBox Margin="20,0,0,0" Grid.Row="0">
                 <StackPanel>
                     <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Full Name" VerticalAlignment="Top"/>
-                    <TextBox HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="359"/>
+                    <TextBox HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="359"/>
                 </StackPanel>
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                    <TextBox Grid.Row="1" HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="359"/>
+                    <TextBox Grid.Row="1" HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="359"/>
                     <TextBlock Grid.Row="0" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Organization" VerticalAlignment="Top"/>
                 </Grid>
                 <Grid>
@@ -68,7 +68,7 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                    <TextBox Grid.Row="1" HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="359"/>
+                    <TextBox Grid.Row="1" HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="359"/>
                     <TextBlock Grid.Row="0" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Phone Number" VerticalAlignment="Top"/>
                 </Grid>
                 <Grid>
@@ -76,7 +76,7 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                    <TextBox Grid.Row="1" HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="359"/>
+                    <TextBox Grid.Row="1" HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="359"/>
                     <TextBlock Grid.Row="0" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Address" VerticalAlignment="Top"/>
                 </Grid>
                 <Grid>
@@ -84,7 +84,7 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                    <TextBox Grid.Row="1" HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="359"/>
+                    <TextBox Grid.Row="1" HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="359"/>
                     <TextBlock Grid.Row="0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top"/>
                 </Grid>
             </ListBox>
