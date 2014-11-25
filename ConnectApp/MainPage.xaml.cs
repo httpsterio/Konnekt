@@ -27,44 +27,12 @@ namespace ConnectApp
         // Constructor
         public MainPage()
         {
-            InitializeComponent();
-            this.Loaded += MainPage_Loaded;
-           
+            InitializeComponent();       
         }
 
-        void MainPage_Loaded(object sender, RoutedEventArgs e)
-        {
-            ProximityDevice device = ProximityDevice.GetDefault();
-            if (device != null)
-            {
-                device.SubscribeForMessage("WindowsMime", WindowsMimeHandler);
-            }
-        }
-
-        private void WindowsMimeHandler(ProximityDevice sender, ProximityMessage message)
-        {
-            var buffer = message.Data.ToArray();
-            int mimesize;
-            //search first '\0' charactere
-            for (mimesize = 0; mimesize < 256 && buffer[mimesize] != 0; ++mimesize)
-            {
-            }
-
-            //extract mimetype
-            var mimeType = Encoding.UTF8.GetString(buffer, 0, mimesize);
-
-            if (mimeType == "WriteTag.text/vcard")
-            {
-                //convert data to string. This traitement depend on mimetype value.
-                var data = Encoding.UTF8.GetString(buffer, 256, buffer.Length - 256);
-            }
-
-
-
-        }
       
 
-        private async void SaveClicked(object sender, EventArgs e)
+        private void SaveClicked(object sender, EventArgs e)
         {
             string fullName = FullNameTextBox.Text;
             if (string.IsNullOrWhiteSpace(fullName))
@@ -101,9 +69,13 @@ namespace ConnectApp
 
             try
             {
-                var stream = storagefile.CreateFile("vcard.vcf");
-                var sw = new StreamWriter(stream);
-                sw.Write(sb);
+                using (var stream = storagefile.CreateFile("vcard.vcf"))
+                {
+                    using (var sw = new StreamWriter(stream))
+                    {
+                        sw.Write(sb);
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -121,16 +93,16 @@ namespace ConnectApp
                 var stream = IsolatedStorageFile.GetUserStoreForApplication().OpenFile("vcard.vcf", FileMode.Open);
                 var sr = new StreamReader(stream);
                 var vcard = sr.ReadToEnd();
-                var dataWriter = new DataWriter();
+                var dataWriter = new DataWriter() { UnicodeEncoding = Windows.Storage.Streams.UnicodeEncoding.Utf8 };
                 dataWriter.WriteString(vcard);
-                device.PublishBinaryMessage("WindowsMime:WriteTag.text/vcard", dataWriter.DetachBuffer(), MesssageTransmitted);
+                device.PublishBinaryMessage("WindowsMime.text/vcard", dataWriter.DetachBuffer(), MesssageTransmitted);
 
             }
         }
 
         private void MesssageTransmitted(ProximityDevice sender, long messageid)
         {
-            MessageBox.Show("Vcard transfered succesfully");
+            Dispatcher.BeginInvoke(() => MessageBox.Show("Vcard transfered succesfully"));
         }
     }
 }
