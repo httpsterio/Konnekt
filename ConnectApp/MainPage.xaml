@@ -132,6 +132,7 @@
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
             <shell:ApplicationBarIconButton Click="SaveClicked" IconUri="/Assets/save.png" Text="Save"/>
+            <shell:ApplicationBarIconButton Click="ShareClicked" IconUri="/Assets/share.png" Text="Share"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 </phone:PhoneApplicationPage>

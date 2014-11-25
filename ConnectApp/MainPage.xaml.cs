@@ -5,6 +5,7 @@ using System.IO;
 using System.IO.IsolatedStorage;
 using System.Linq;
 using System.Net;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.ServiceModel.Channels;
 using System.Text;
 using System.Windows;
@@ -13,9 +14,11 @@ using System.Windows.Navigation;
 using Windows.Networking.Proximity;
 using Windows.Phone.PersonalInformation;
 using Windows.Storage;
+using Windows.Storage.Streams;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using ConnectApp.Resources;
+using UnicodeEncoding = System.Text.UnicodeEncoding;
 
 namespace ConnectApp
 {
@@ -25,27 +28,42 @@ namespace ConnectApp
         public MainPage()
         {
             InitializeComponent();
-            
-            // Sample code to localize the ApplicationBar
-            //BuildLocalizedApplicationBar();
+            this.Loaded += MainPage_Loaded;
+           
         }
 
+        void MainPage_Loaded(object sender, RoutedEventArgs e)
+        {
+            ProximityDevice device = ProximityDevice.GetDefault();
+            if (device != null)
+            {
+                device.SubscribeForMessage("WindowsMime", WindowsMimeHandler);
+            }
+        }
 
-        // Sample code for building a localized ApplicationBar
-        //private void BuildLocalizedApplicationBar()
-        //{
-        //    // Set the page's ApplicationBar to a new instance of ApplicationBar.
-        //    ApplicationBar = new ApplicationBar();
+        private void WindowsMimeHandler(ProximityDevice sender, ProximityMessage message)
+        {
+            var buffer = message.Data.ToArray();
+            int mimesize;
+            //search first '\0' charactere
+            for (mimesize = 0; mimesize < 256 && buffer[mimesize] != 0; ++mimesize)
+            {
+            }
 
-        //    // Create a new button and set the text value to the localized string from AppResources.
-        //    ApplicationBarIconButton appBarButton = new ApplicationBarIconButton(new Uri("/Assets/AppBar/appbar.add.rest.png", UriKind.Relative));
-        //    appBarButton.Text = AppResources.AppBarButtonText;
-        //    ApplicationBar.Buttons.Add(appBarButton);
+            //extract mimetype
+            var mimeType = Encoding.UTF8.GetString(buffer, 0, mimesize);
 
-        //    // Create a new menu item with the localized string from AppResources.
-        //    ApplicationBarMenuItem appBarMenuItem = new ApplicationBarMenuItem(AppResources.AppBarMenuItemText);
-        //    ApplicationBar.MenuItems.Add(appBarMenuItem);
-        //}
+            if (mimeType == "WriteTag.text/vcard")
+            {
+                //convert data to string. This traitement depend on mimetype value.
+                var data = Encoding.UTF8.GetString(buffer, 256, buffer.Length - 256);
+            }
+
+
+
+        }
+      
+
         private async void SaveClicked(object sender, EventArgs e)
         {
             string fullName = FullNameTextBox.Text;
@@ -91,6 +109,28 @@ namespace ConnectApp
             {
                 MessageBox.Show("Something bad happened while saving the informaiton");
             }
+        }
+
+        private void ShareClicked(object sender, EventArgs e)
+        {
+            ProximityDevice device = ProximityDevice.GetDefault();
+
+            // Make sure NFC is supported
+            if (device != null)
+            {
+                var stream = IsolatedStorageFile.GetUserStoreForApplication().OpenFile("vcard.vcf", FileMode.Open);
+                var sr = new StreamReader(stream);
+                var vcard = sr.ReadToEnd();
+                var dataWriter = new DataWriter();
+                dataWriter.WriteString(vcard);
+                device.PublishBinaryMessage("WindowsMime:WriteTag.text/vcard", dataWriter.DetachBuffer(), MesssageTransmitted);
+
+            }
+        }
+
+        private void MesssageTransmitted(ProximityDevice sender, long messageid)
+        {
+            MessageBox.Show("Vcard transfered succesfully");
         }
     }
 }
