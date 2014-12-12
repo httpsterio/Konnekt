@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{68521f22-1a7b-4879-9f7b-36676a94d0bd}" Title="ConnectApp" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="ConnectApp author" Description="Sample description" Publisher="ConnectApp" PublisherID="{6e462bc1-4788-4f41-89ec-38a7936bf1d7}">
-    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+  <App xmlns="" ProductID="{68521f22-1a7b-4879-9f7b-36676a94d0bd}" Title="Konnekt" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="httpster.io" Description="Generate and send VCARD files over NFC" Publisher="httpster.io" PublisherID="{6e462bc1-4788-4f41-89ec-38a7936bf1d7}">
+    <IconPath IsRelative="true" IsResource="false">icon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
       <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
@@ -17,20 +17,24 @@
     <Tokens>
       <PrimaryToken TokenID="ConnectAppToken" TaskName="_default">
         <TemplateFlip>
-          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
+          <SmallImageURI IsRelative="true" IsResource="false">tilesmall.png</SmallImageURI>
           <Count>0</Count>
-          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
-          <Title>ConnectApp</Title>
+          <BackgroundImageURI IsRelative="true" IsResource="false">tilebig.png</BackgroundImageURI>
+          <Title>Konnekt</Title>
           <BackContent>
           </BackContent>
           <BackBackgroundImageURI>
           </BackBackgroundImageURI>
           <BackTitle>
           </BackTitle>
+          <LargeBackgroundImageURI IsRelative="true" IsResource="false">
+          </LargeBackgroundImageURI>
+          <LargeBackContent />
+          <LargeBackBackgroundImageURI IsRelative="true" IsResource="false">
+          </LargeBackBackgroundImageURI>
           <DeviceLockImageURI>
           </DeviceLockImageURI>
-          <HasLarge>
-          </HasLarge>
+          <HasLarge>True</HasLarge>
         </TemplateFlip>
       </PrimaryToken>
     </Tokens>

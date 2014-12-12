@@ -1,12 +1,27 @@
-﻿<xapCache source="c:\users\sami\documents\visual studio 2013\Projects\ConnectApp\ConnectApp\Bin\Debug\ConnectApp_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="11/25/2014 6:49:55 PM">
-  <file source="c:\users\sami\documents\visual studio 2013\Projects\ConnectApp\ConnectApp\obj\Debug\ConnectApp.dll" archivePath="ConnectApp.dll" lastWriteTime="11/25/2014 6:49:53 PM" />
-  <file source="c:\users\sami\documents\visual studio 2013\Projects\ConnectApp\ConnectApp\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="11/25/2014 6:49:48 PM" />
-  <file source="c:\users\sami\documents\visual studio 2013\Projects\ConnectApp\ConnectApp\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="11/25/2014 6:49:48 PM" />
-  <file source="c:\users\sami\documents\visual studio 2013\Projects\ConnectApp\ConnectApp\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="11/25/2014 6:49:48 PM" />
-  <file source="c:\users\sami\documents\visual studio 2013\Projects\ConnectApp\ConnectApp\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="11/25/2014 6:49:48 PM" />
-  <file source="c:\users\sami\documents\visual studio 2013\Projects\ConnectApp\ConnectApp\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="11/25/2014 6:49:48 PM" />
-  <file source="c:\users\sami\documents\visual studio 2013\Projects\ConnectApp\ConnectApp\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="11/25/2014 6:49:54 PM" />
-  <file source="c:\users\sami\documents\visual studio 2013\Projects\ConnectApp\ConnectApp\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="11/25/2014 6:49:48 PM" />
-  <file source="c:\users\sami\documents\visual studio 2013\Projects\ConnectApp\ConnectApp\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="11/25/2014 6:49:48 PM" />
-  <file source="c:\users\sami\documents\visual studio 2013\Projects\ConnectApp\ConnectApp\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="11/25/2014 6:49:55 PM" />
+﻿<xapCache source="C:\Users\Sami\Desktop\Connect\ConnectApp\Bin\Debug\ConnectApp_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="12/12/2014 2:16:09 PM">
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\obj\Debug\ConnectApp.dll" archivePath="ConnectApp.dll" lastWriteTime="12/12/2014 2:16:09 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="12/12/2014 2:09:54 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Assets\save.png" archivePath="Assets\save.png" lastWriteTime="12/12/2014 2:09:54 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Assets\share.png" archivePath="Assets\share.png" lastWriteTime="12/12/2014 2:09:54 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="12/12/2014 2:09:54 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="12/12/2014 2:09:54 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="12/12/2014 2:09:54 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="12/12/2014 2:09:54 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\README_FIRST.txt" archivePath="README_FIRST.txt" lastWriteTime="12/12/2014 2:09:54 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Toolkit.Content\ApplicationBar.Add.png" archivePath="Toolkit.Content\ApplicationBar.Add.png" lastWriteTime="12/12/2014 2:09:55 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="12/12/2014 2:09:55 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="12/12/2014 2:09:55 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="12/12/2014 2:09:55 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="12/12/2014 2:09:55 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="12/12/2014 2:11:13 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="12/12/2014 2:09:54 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="12/12/2014 2:09:54 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="12/12/2014 2:09:54 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="12/12/2014 2:09:54 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="12/12/2014 2:09:54 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Bin\Debug\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="12/12/2014 2:09:54 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="12/12/2014 2:09:55 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="12/12/2014 2:09:54 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="12/12/2014 2:09:54 PM" />
+  <file source="C:\Users\Sami\Desktop\Connect\ConnectApp\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="12/12/2014 2:11:13 PM" />
 </xapCache>
